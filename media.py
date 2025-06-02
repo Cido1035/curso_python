@@ -1,17 +1,29 @@
-nota1 = float (input ("Digitar uma nota"))
-nota2 = float (input ("Digitar uma nota"))
-nota3 = float (input ("Digitar uma nota"))
 
-notas = [nota1, nota2 ,nota3]
-soma = sum(notas)
-media = soma / len (notas)
+def receber_input_usuario():
+    nota1 = float (input ("Digitar uma nota"))
+    nota2 = float (input ("Digitar uma nota"))
+    nota3 = float (input ("Digitar uma nota"))
+    return nota1, nota2, nota3
 
-if  media >= 7:
-    print ("APROVADO")
+def calcular_media(notas):
+    soma = sum(notas)
+    media = soma / len(notas)
+    return media
 
-if  media <= 4:  
-    print ("REPROVADO")
+def verificar_aprovacao(media):
+    if media >= 7:
+        print ("APROVADO")
+    elif media <= 4:
+        print ("REPROVADO")
+    else:
+        print ("RECUPERAÇÃO")
 
-if  media == 5: 
-    print ("RECUPERAÇÃO")    
 
+def principal():
+    notas = receber_input_usuario()
+    media = calcular_media(notas)
+    verificar_aprovacao(media)
+
+
+if __name__ == "__main__": # se o arquivo for executado diretamente, chama a função principal
+    principal()
