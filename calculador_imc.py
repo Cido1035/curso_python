@@ -1,23 +1,23 @@
-nome = input("digite seu nome: ")
-peso = float(input("digite seu peso: "))
-altura = float(input("qual sua altura: "))
+# nome = input("digite seu nome: ")
+# peso = float(input("digite seu peso: "))
+# altura = float(input("qual sua altura: "))
 
-imc = peso/(altura*altura)
+# imc = peso/(altura*altura)
  
-if imc < 18.5:
-    print (f"Ola {nome}, seu imc é {imc}, sua classificação e obsidade 0")
+# if imc < 18.5:
+#     print (f"Ola {nome}, seu imc é {imc}, sua classificação e obsidade 0")
 
-elif imc > 18.5 and imc <= 24.9:
-    print (f"Ola {nome}, seu imc é {imc}, sua classificação e normal 0")
+# elif imc > 18.5 and imc <= 24.9:
+#     print (f"Ola {nome}, seu imc é {imc}, sua classificação e normal 0")
 
-elif imc > 25.0 and imc <= 29.9:
-    print (f"Ola {nome}, seu imc é {imc}, sua classificação e sobrepeso 1")
+# elif imc > 25.0 and imc <= 29.9:
+#     print (f"Ola {nome}, seu imc é {imc}, sua classificação e sobrepeso 1")
 
-elif imc > 30.0 and imc <=  39.9:
-    print (f"Ola {nome}, seu imc é {imc}, sua classificação e obsidade 2")
+# elif imc > 30.0 and imc <=  39.9:
+#     print (f"Ola {nome}, seu imc é {imc}, sua classificação e obsidade 2")
 
-elif imc >= 40.0:
-    print (f"Ola {nome}, seu imc é {imc}, sua classificação e obsidade grave 2")
+# elif imc >= 40.0:
+    # print (f"Ola {nome}, seu imc é {imc}, sua classificação e obsidade grave 2")
 
 
 
@@ -44,3 +44,4 @@ elif imc >= 40.0:
 # 3) Atividade: Caixa de Supermercado com Desconto
 # Criar um programa que simule o caixa de um supermercado, aplicando um desconto para
 # compras acima de R$ 100,00.
+
